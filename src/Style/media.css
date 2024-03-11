@@ -1,0 +1,49 @@
+@media (max-width: 800px) {
+  html {
+    font-size: 13px;
+  }
+  .container-menu {
+    position: absolute;
+    z-index: 88;
+    background-color: #00000072;
+    width: 100%;
+    display: block;
+    transition: 1s;
+  }
+
+  .home .small-menu {
+    display: flex;
+    box-shadow: 2px 0 5px 0 var(--Prcl);
+  }
+  .menu .close {
+    display: block;
+  }
+
+  .menu {
+    box-shadow: 5px 0 15px 0 var(--Prcl);
+  }
+  .sign {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+@media (max-width: 350px) {
+  .menu {
+    width: 250px;
+  }
+  .menu .profile-wrapper {
+    font-size: 1rem;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 5px;
+  }
+  .menu .profile-img {
+    min-width: 60px;
+    height: 60px;
+  }
+  .sign-container {
+    width: 100%;
+  }
+}

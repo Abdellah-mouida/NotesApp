@@ -1,0 +1,120 @@
+.sign {
+  display: grid;
+  position: relative;
+  overflow: hidden;
+  height: 100svh;
+  width: 100%;
+
+  grid-template-columns: repeat(10, 1fr);
+  gap: 5px;
+}
+.sign-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  padding: 1rem;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 350px;
+  box-shadow: 0 0 10px 1px var(--Prcl);
+}
+.inps {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.form-controle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.form-controle label {
+  font-size: 0.9rem;
+}
+.sign-container h2 {
+  text-align: center;
+}
+.sign .sqr {
+  background-color: var(--light);
+  transition: 0.5s;
+  cursor: pointer;
+}
+.sign .sqr:hover {
+  background-color: var(--Prcl);
+}
+.form-controle input {
+  border-radius: 10px;
+  padding: 7px 10px;
+  outline: none;
+  border: solid 2px transparent;
+  background-color: var(--light);
+}
+.form-controle input:focus {
+  border: solid 2px var(--Prcl);
+}
+.form-controle button {
+  padding: 0.5rem;
+  background-color: var(--Prcl);
+  color: var(--white);
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+  font-size: 1.1rem;
+}
+.form-controle button:hover {
+  opacity: 0.9;
+}
+.sign::after {
+  content: "";
+  width: 300px;
+  height: 200%;
+  position: absolute;
+  top: -150%;
+  rotate: 45deg;
+  left: 0;
+  background-color: var(--Prcl);
+  z-index: -1;
+  animation: move 6s linear infinite;
+  transform: translateX(0);
+}
+.sign::before {
+  content: "";
+  width: 300px;
+  height: 200%;
+  position: absolute;
+  bottom: -150%;
+  rotate: 45deg;
+  right: 0;
+  background-color: var(--Prcl);
+  z-index: -1;
+  animation: move1 6s linear infinite;
+  transform: translateX(0);
+}
+@keyframes move {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(120vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes move1 {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-120vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

@@ -1,0 +1,21 @@
+.add textarea {
+  resize: none;
+  width: 100%;
+  height: 500px;
+  padding: 1rem;
+  outline: none;
+  border: var(--black) solid 1.5px;
+  font-size: 1rem;
+  border-radius: 10px;
+  line-height: 2;
+  text-align: justify;
+}
+.add textarea::selection {
+  background-color: var(--Prcl);
+}
+.add textarea::placeholder {
+  color: var(--Prcl);
+}
+.add textarea::grammar-error {
+  color: #00ff;
+}

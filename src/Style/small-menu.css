@@ -1,0 +1,54 @@
+.small-menu {
+  width: fit-content;
+  display: none;
+  z-index: 2;
+}
+.small-menu .menu-links .Link i {
+  padding-right: 0;
+}
+.small-menu button i {
+  padding-right: 0;
+}
+.small-menu i {
+  font-size: 1.2rem;
+}
+.small-menu .links {
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.small-menu .Link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.7rem 0.5rem;
+  color: var(--Prcl);
+  border-radius: 8px;
+
+  transition: 0.5s;
+}
+.small-menu .Link:hover {
+  background-color: var(--Prcl);
+  color: var(--white);
+}
+.small-menu button {
+  padding: 0.5rem;
+  background-color: var(--Prcl);
+  color: var(--light);
+  outline: none;
+  margin: 0.5rem;
+  border: none;
+
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+.small-menu .profile {
+  padding: 0.5rem;
+}
+.small-menu .menu-icon {
+  font-size: 1.5rem;
+}

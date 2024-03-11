@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+:root {
+  --Prcl: #0c89f0;
+  --light: #dbe7f0;
+  --dark: #031e34;
+  --white: #fff;
+  --black: #000;
+}
+
+body {
+  height: 100svh;
+}
+.home {
+  width: 100%;
+  height: 100svh;
+  display: flex;
+  align-items: center;
+  color: var(--black);
+  position: relative;
+}
+.home-outlet {
+  flex: 1;
+  height: 100svh;
+  padding: 0.5rem;
+  overflow: auto;
+}

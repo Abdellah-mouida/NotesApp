@@ -1,0 +1,105 @@
+.menu {
+  height: 100svh;
+  width: 350px;
+  background-color: var(--light);
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  gap: 10px;
+  background: linear-gradient(
+    to bottom,
+    var(--Prcl),
+    var(--light) 30%,
+    var(--white)
+  );
+}
+.menu .profile {
+  display: flex;
+  width: 100%;
+  height: 25%;
+  color: var(--black);
+  padding: 1rem;
+  gap: 10px;
+}
+.menu .profile i {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.profile-wrapper {
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  height: fit-content;
+  gap: 10px;
+  font-size: 1.2rem;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.profile-img {
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-color: var(--black);
+}
+.menu .profile-img {
+  min-width: 100px;
+  height: 100px;
+}
+.profile-wrapper p {
+  padding: 12px 0;
+}
+.Link {
+  text-decoration: none;
+  color: var(--black);
+}
+.menu .menu-links {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+.menu-links .Link {
+  padding: 10px 12px;
+  color: var(--Prcl);
+  transition: 0.4s;
+  display: block;
+  border-radius: 10px;
+}
+.menu-links .Link:hover,
+.menu-links .Link.active {
+  background-color: var(--Prcl);
+  color: var(--light);
+}
+
+.menu-links .Link i {
+  padding-right: 10px;
+}
+.menu button {
+  margin: 1rem;
+  padding: 0.7rem;
+  background-color: var(--Prcl);
+  color: var(--light);
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: 0.5s;
+}
+.menu button:hover {
+  opacity: 0.8;
+}
+.menu button i {
+  padding-right: 10px;
+}
+.menu .close {
+  font-size: 1.5rem;
+  position: absolute;
+  padding: 20px;
+  cursor: pointer;
+  display: none;
+}
